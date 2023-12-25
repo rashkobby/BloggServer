@@ -7,6 +7,7 @@ const cors = require('cors');
 
 // Routes
 const blogRoutes = require('./routes/Blog');
+const UserRoutes = require('./routes/User');
 
 dotenv.config();
 
@@ -29,6 +30,7 @@ mongoose
 
 //endpoints 
 app.use('/blogs', blogRoutes); // Assuming '/blog' as the base URL for the Blog routes
+app.use('/users', UserRoutes); // Assuming '/users' as the base URL for the User routes
 
 
 
